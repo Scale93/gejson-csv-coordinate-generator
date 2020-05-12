@@ -59,6 +59,11 @@ coordinateLatLonArray.forEach((latLon, index) => {
   }
 });
 
+// attach random vale property
+geoJSONLoc.features.forEach((elem) => {
+  elem.properties.value = Math.random() * 30 + 1;
+});
+
 var fs = require("fs");
 fs.writeFile("GeoJson/geoJSONLoc.json", JSON.stringify(geoJSONLoc), function (
   err

@@ -1,0 +1,28 @@
+
+REQUIREMENTS:
+npm install random-points-generator
+npm install geojson2csv
+
+Generate Geo Json on:
+https://geoman.io/geojson-editor
+
+take array of Geo points
+
+var coordinateLatLonArray = [  
+  [15.545395, 38.201909],
+  [15.557685, 38.197038],
+  [15.537675, 38.194089],
+  [15.558091, 38.188021],
+  [15.538361, 38.18411],
+  [15.56015, 38.178986],
+  [15.544023, 38.177907],
+  [15.552831, 38.172277],
+  [15.547454, 38.20838],
+  [15.561694, 38.20474]
+]
+
+Then generate point geojson & csv:
+under ./GeoJson/ & ./CSV/
+
+EXEC
+node .\random_geojson_gen.js

@@ -80,7 +80,7 @@ coordinateLatLonArray.forEach((latLon, index) => {
 
     geoJSONLoc = concatGeoJSON(
       geoJSONLoc,
-      RandomGenerator.random(20, { bbox: [minY, minX, maxY, maxX] })
+      RandomGenerator.random(10, { bbox: [minY, minX, maxY, maxX] })
     );
   }
 });
